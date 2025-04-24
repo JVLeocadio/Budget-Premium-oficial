@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style.css">
+<script src="src/index.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Preenchimento de Metas - 01/01/25 a 31/01/25</h1>
+  
+    <!-- Seleção do Vendedor -->
+    <div class="form-group">
+      <label for="vendedor">Selecione o Vendedor:</label>
+      <select id="vendedor" name="vendedor">
+        <option value="">Selecione...</option>
+        <option value="vendedor1">Vendedor 1</option>
+        <option value="vendedor2">Vendedor 2</option>
+        <option value="vendedor3">Vendedor 3</option>
+      </select>
+    </div>
+  
+    <!-- Formulários de Metas -->
+    <div class="form-group-wrapper">
+      <!-- Primeiro Formulário -->
+      <form class="form-group">
+        <h3>METAS</h3>
+        <div class="meta-container">
+          <label for="basf-l">BASF LTS</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">BASF R$</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">TIGRE T&C</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">TIGRE FPP</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">GENCO</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">VIAPOL</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">DS COLOR</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input"  placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+        <div class="meta-container">
+          <label for="basf-l">G2</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+  
+
+      </form>
+  
+      <!-- Segundo Formulário -->
+      <form class="form-group">
+        <h1>KPI</h1>
+        
+        <h3>SUVINIL</h3>
+
+        <div class="meta-container">
+          <label for="basf-l">Cobertura / Ativação Mensal</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">Tecnologias BASF</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">Mix Básico</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <h3>TIGRE (T&C)</h3>
+
+        <div class="meta-container">
+          <label for="basf-l">Cobertura / Ativação Mensal</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta" >
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">MIX LUZES T&C</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">PESO 3 (AMARELO)</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+
+        <div class="meta-container">
+          <label for="basf-l">PESO 5 (AZUL)</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+
+       
+
+
+      </form>
+
+
+
+      <form class="form-group">
+
+  <h3>PREMIUM POSITIVAÇÃO</h3>
+
+        <div class="meta-container">
+          <label for="basf-l">TIGRE FPP</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">VIAPOL</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">GENCO</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">DS COLLOR</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">G2</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+
+        
+
+        </div>
+        
+
+      </form>
+
+      <!-- Terceiro Formulário -->
+       <form class="form-group">
+        <h1>RECUPERAÇÃO</h1>
+        <h2>HIERARQUIA DE PRODUTOS </h2>
+
+        <div class="meta-container">
+          <label for="basf-l">BASF LTS</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">BASF R$</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">TIGRE T&C</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">TIGRE FPP</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">GENCO</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">VIAPOL</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">DS COLOR</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">G2</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+
+
+       </form>
+
+       <form class="form-group">
+
+        <h2>KPI´S - SUVINIL (Litros)</h2>
+
+        <div class="meta-container">
+          <label for="basf-l">Cobertura / Ativação Mensal
+          </label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">Mix Básico
+          </label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+
+        <h2>KPI´S - TIGRE</h2>
+
+        <div class="meta-container">
+          <label for="basf-l">Cobertura / Ativação Mensal</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">PESO 3 (AMARELO) </label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">PESO 5 (AZUL) </label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <h2>KPI'S PREMIUM POSITIVAÇÃO</h2>
+
+        <div class="meta-container">
+          <label for="basf-l">TIGRE FPP</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">VIAPOL</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">GENCO</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">DS COLLOR</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+        <div class="meta-container">
+          <label for="basf-l">G2</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">Clietes</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+        <div class="meta-container">
+          <label for="basf-l">Novos Clientes</label>
+          <div class="meta-fields">
+            
+            <label for="text">Meta Atual:</label>
+            <input type="text" id="basf-l" class="meta-input meta-atual" value="100" readonly>
+            <button type="button" class="edit-meta-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.793 9.793a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1-.11-.168l9.793-9.793zM11.207 2L2 11.207V13h1.793L14 3.793 11.207 2zM1 13.5V15h1.5l.5-.5H1z"/>
+              </svg>
+            </button>
+            <input type="text" id="nova-meta-basf-l" class="meta-input" placeholder="Nova meta">
+           
+          </div>
+        </div>
+
+       </form>
+      
+
+    </div>
+
+    <!-- Botão de Salvar -->
+    <div class="button-container">
+      <button type="submit" class="submit-btn">Salvar Metas</button>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  
+
+
+
+  
+</body>
+</html>
+
+
+

@@ -1,0 +1,181 @@
+
+
+/*# sourceMappingURL=stylePage2.css.map */
+
+
+
+/* Estilo para a página da carteira */
+.page-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Carteira */
+  .wallet-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .wallet-card {
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  .wallet-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .wallet-amount {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+ 
+  /* Clientes */
+  .clients-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .clients-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .clients-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .client-card {
+    background-color: #fee4cb;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client-card h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .client-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Metas */
+  .goals-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goals-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .goals-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .goal-card {
+    background-color: #e9e7fd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goal-card h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .goal-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .wallet-summary {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .clients-list,
+    .goals-list {
+      flex-direction: column;
+    }
+  }
+
+
+  /* Botão de detalhes */
+.info-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .info-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }

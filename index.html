@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="src/index.js" type="module"></script>
+   
+</head>
+<body>
+    <div class="app-container"  >
+                    <div class="app-header">
+                     
+                      <div class="app-header-left">
+                        <span class="app-icon"></span>
+                        <p class="app-name">Budget</p>
+                    
+                        <!-- Card de Total Balance -->
+                        <div class="total-balance-card">
+
+                          <div class="total-balance-footer">
+                            <span>Carteira</span>
+                            <button class="wallet-btn" data-page="page2.html">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.293 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3z"/>
+                              </svg>
+                            </button>
+                          </div>
+                          
+                            <div><p class="total-balance-amount"> $25,000.40</p></div>
+                        </div>
+                    </div>
+
+
+                            <div class="app-header-right">
+                               
+                              <button class="dark-2" id="theme-toggle-button" title="Switch Theme"></button>
+                              
+                                <button class="notification-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
+                                </button>
+
+
+
+
+                                <button class="profile-btn">
+                                <img  />
+                                <span>Michelle ADM RP</span>
+                                </button>
+                            </div>
+
+                    </div>
+
+                            <div class="app-content">
+                            
+                                <div class="app-sidebar">
+                                <a href="#" class="app-sidebar-link " data-page="pagehome.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" /></svg>
+                                </a>
+                              
+                                <a href="#" class="app-sidebar-link fill-page-btn " data-page="prenchimento.html">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-pie-chart" viewBox="0 0 24 24">
+                                    <defs />
+                                    <path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z" />
+                                </svg>
+                                </a>
+                               
+                                <a href="#" class="app-sidebar-link" data-page="page2.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" /></svg>
+                                </a>
+                               
+                                <a href="#" class="app-sidebar-link" data-page="page3.html">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-settings" viewBox="0 0 24 24">
+                                    <defs />
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                                </svg>
+                                    </a>
+
+                                    
+                                    
+                                    
+                            </div>
+
+
+
+
+                            <div class="projects-section" id="content" >
+                                
+                                <div class="projects-section-line">
+                                  
+                                
+                                       
+                                </div>
+                                
+                                
+                                <div class="project-boxes jsGridView">
+                                            <div class="project-box-wrapper">
+                                                <div class="project-box" style="background-color: #fee4cb;">
+                                                <div class="project-box-header">
+                                                    <span>December 10, 2020</span>
+                                                    <div class="more-wrapper">
+                                                    <button class="project-btn-more">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                        <circle cx="12" cy="12" r="1" />
+                                                        <circle cx="12" cy="5" r="1" />
+                                                        <circle cx="12" cy="19" r="1" /></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="project-box-content-header">
+                                                <p class="box-content-header">BASF Litragem</p>
+                                                <p class="box-content-subheader">90.00 L de 172.438 L</p>
+                                            </div>
+                                            <div class="box-progress-wrapper">
+                                                <p class="box-progress-header">Progress</p>
+                                                <div class="box-progress-bar">
+                                                <span class="box-progress" style="width: 60%; background-color: #ff942e"></span>
+                                                </div>
+                                                <p class="box-progress-percentage">60%</p>
+                                                <P>A RECEBER $150</P>
+                                            </div>
+                                            <div class="project-box-footer">
+                                                <div>
+                                                <button class="add-participant" style="color: #ff942e;" data-modal="modal-basf-litragem">
+                                                    <p>Visualizar</p>
+                                                </button>
+                                                </div>
+                                                <div class="days-left" style="color: #ff942e;">
+                                                2 Days Left
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-box-wrapper">
+                                            <div class="project-box" style="background-color: #e9e7fd;">
+                                            <div class="project-box-header">
+                                                <span>December 10, 2020</span>
+                                                <div class="more-wrapper">
+                                                <button class="project-btn-more">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                    <circle cx="12" cy="19" r="1" /></svg>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="project-box-content-header">
+                                                <p class="box-content-header">BASF R$</p>
+                                                <p class="box-content-subheader"> R$1.477.682 de R$2.955.364</p>
+                                            </div>
+                                            <div class="box-progress-wrapper">
+                                                <p class="box-progress-header">Progress</p>
+                                                <div class="box-progress-bar">
+                                                <span class="box-progress" style="width: 50%; background-color: #4f3ff0"></span>
+                                                </div>
+                                                <p class="box-progress-percentage">50%</p>
+                                                <P>A RECEBER $150</P>
+                                            </div>
+                                            <div class="project-box-footer">
+                                                <div class="participants">
+                                                <button class="add-participant" style="color: #4f3ff0;" data-modal="modal-basf-r" >
+                                                    <p>Visualizar</p>
+                                                </button>
+                                                </div>
+                                                <div class="days-left" style="color: #4f3ff0;">
+                                                2 Days Left
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-box-wrapper">
+                                            <div class="project-box">
+                                            <div class="project-box-header">
+                                                <span>December 10, 2020</span>
+                                                <div class="more-wrapper">
+                                                <button class="project-btn-more">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                    <circle cx="12" cy="19" r="1" /></svg>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="project-box-content-header">
+                                                <p class="box-content-header">TIGRE T&C</p>
+                                                <p class="box-content-subheader">Prototyping</p>
+                                            </div>
+                                            <div class="box-progress-wrapper">
+                                                <p class="box-progress-header">Progress</p>
+                                                <div class="box-progress-bar">
+                                                <span class="box-progress" style="width: 80%; background-color: #096c86"></span>
+                                                </div>
+                                                <p class="box-progress-percentage">80%</p>
+                                                <P>A RECEBER $150</P>
+                                            </div>
+                                            <div class="project-box-footer">
+                                                <div class="participants">
+                                                <button class="add-participant" style="color: #096c86;" data-modal="modal-tigre-tc" >
+                                                    <p>Visualizar</p>
+                                                </button>
+                                                </div>
+                                                <div class="days-left" style="color: #096c86;">
+                                                2 Days Left
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-box-wrapper">
+                                            <div class="project-box" style="background-color: #ffd3e2;">
+                                            <div class="project-box-header">
+                                                <span>December 10, 2020</span>
+                                                <div class="more-wrapper">
+                                                <button class="project-btn-more">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                    <circle cx="12" cy="19" r="1" /></svg>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="project-box-content-header">
+                                                <p class="box-content-header">TIGRE FPP</p>
+                                                <p class="box-content-subheader">Prototyping</p>
+                                            </div>
+                                            <div class="box-progress-wrapper">
+                                                <p class="box-progress-header">Progress</p>
+                                                <div class="box-progress-bar">
+                                                <span class="box-progress" style="width: 20%; background-color: #df3670"></span>
+                                                </div>
+                                                <p class="box-progress-percentage">20%</p>
+                                                <P>A RECEBER $150</P>
+                                            </div>
+                                            <div class="project-box-footer">
+                                                <div class="participants">
+                                                <button class="add-participant" style="color: #df3670;" data-modal="modal-tigre-fpp" >
+                                                    <p>Visualizar</p>
+                                                </button>
+                                                </div>
+                                                <div class="days-left" style="color: #df3670;">
+                                                2 Days Left
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                            <div class="project-box-wrapper">
+                                                <div class="project-box" style="background-color: #c8f7dc;">
+                                                    <div class="project-box-header">
+                                                        <span>December 10, 2020</span>
+                                                                <div class="more-wrapper">
+                                                                    <button class="project-btn-more">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                                        <circle cx="12" cy="12" r="1" />
+                                                                        <circle cx="12" cy="5" r="1" />
+                                                                        <circle cx="12" cy="19" r="1" /></svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        <div class="project-box-content-header">
+                                                            <p class="box-content-header">GENCO</p>
+                                                            <p class="box-content-subheader">Prototyping</p>
+                                                        </div>
+                                                    <div class="box-progress-wrapper">
+                                                        <p class="box-progress-header">Progress</p>
+                                                            <div class="box-progress-bar">
+                                                                <span class="box-progress" style="width: 60%; background-color: #34c471"></span>
+                                                            </div>
+                                                        <p class="box-progress-percentage">60%</p>
+                                                        <P>A RECEBER $150</P>
+                                                    </div>
+                                                <div class="project-box-footer">
+                                                    <div class="participants">
+                                                    <button class="add-participant" style="color: #34c471;" data-modal="modal-genco" >
+                                                        <p>Visualizar</p>
+                                                    </button>
+                                                    </div>
+                                                    <div class="days-left" style="color: #34c471;">
+                                                    2 Days Left
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="project-box-wrapper">
+                                                <div class="project-box" style="background-color: #d5deff;">
+                                                            <div class="project-box-header">
+                                                                    <span>December 10, 2020</span>
+                                                                <div class="more-wrapper">
+                                                                    <button class="project-btn-more">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                                        <circle cx="12" cy="12" r="1" />
+                                                                        <circle cx="12" cy="5" r="1" />
+                                                                        <circle cx="12" cy="19" r="1" /></svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="project-box-content-header">
+                                                                <p class="box-content-header">VIAPOL</p>
+                                                                <p class="box-content-subheader">Prototyping</p>
+                                                            </div>
+                                                            
+                                                            <div class="box-progress-wrapper">
+                                                                <p class="box-progress-header">Progress</p>
+                                                                <div class="box-progress-bar">
+                                                                    <span class="box-progress" style="width: 40%; background-color: #4067f9"></span>
+                                                                </div>
+                                                                <p class="box-progress-percentage">40%</p>
+                                                                <P>A RECEBER $150</P>
+                                                            </div>
+                                                            
+                                                            <div class="project-box-footer">
+                                                                <div class="participants">
+                                                                            <button class="add-participant" style="color: #4067f9;" data-modal="modal-viapol" >
+                                                                                <p>Visualizar</p>
+                                                                            </button>
+                                                                </div>
+                                                                    <div class="days-left" style="color: #4067f9;">
+                                                                        2 Days Left
+                                                                    </div>
+                                                            </div>
+
+                                                            
+
+                                                            
+                                            
+                                 </div>
+
+
+
+                                    
+
+                                
+                            </div>
+
+                        
+                            <div class="project-box-wrapper">
+                                <div class="project-box" style="background-color: #d1e7dd;">
+                                    <div class="project-box-header">
+                                        <span>December 10, 2020</span>
+                                        <div class="more-wrapper">
+                                            <button class="project-btn-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                    <circle cx="12" cy="19" r="1" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-box-content-header">
+                                        <p class="box-content-header">DS COLOR</p>
+                                        <p class="box-content-subheader">Prototyping</p>
+                                    </div>
+                                    <div class="box-progress-wrapper">
+                                        <p class="box-progress-header">Progress</p>
+                                        <div class="box-progress-bar">
+                                            <span class="box-progress" style="width: 75%; background-color: #198754"></span>
+                                        </div>
+                                        <p class="box-progress-percentage">75%</p>
+                                        <P>A RECEBER $150</P>
+                                    </div>
+                                    <div class="project-box-footer">
+                                        <div class="participants">
+                                            <button class="add-participant" style="color: #198754;" data-modal="modal-ds-color" >
+                                                <p>Visualizar</p>
+                                            </button>
+                                        </div>
+                                        <div class="days-left" style="color: #198754;">
+                                            5 Days Left
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-box-wrapper">
+                                <div class="project-box" style="background-color: #f8d7da;">
+                                    <div class="project-box-header">
+                                        <span>December 10, 2020</span>
+                                        <div class="more-wrapper">
+                                            <button class="project-btn-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                    <circle cx="12" cy="19" r="1" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-box-content-header">
+                                        <p class="box-content-header">G2</p>
+                                        <p class="box-content-subheader">Prototyping</p>
+                                    </div>
+                                    <div class="box-progress-wrapper">
+                                        <p class="box-progress-header">Progress</p>
+                                        <div class="box-progress-bar">
+                                            <span class="box-progress" style="width: 45%; background-color: #dc3545"></span>
+                                        </div>
+                                        <p class="box-progress-percentage">45%</p>
+                                        <P>A RECEBER $150</P>
+                                    </div>
+                                    <div class="project-box-footer">
+                                        <div class="participants">
+                                            <button class="add-participant" style="color: #dc3545;" data-modal="modal-g2" >
+                                                <p>Visualizar</p>
+                                            </button>
+                                        </div>
+                                        <div class="days-left" style="color: #dc3545;">
+                                            1 Day Left
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-box-wrapper">
+                                <div class="project-box" style="background-color: #b596e4;">
+                                    <div class="project-box-header">
+                                        <span>December 10, 2020</span>
+                                        <div class="more-wrapper">
+                                            <button class="project-btn-more">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                    <circle cx="12" cy="12" r="1" />
+                                                    <circle cx="12" cy="5" r="1" />
+                                                    <circle cx="12" cy="19" r="1" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-box-content-header">
+                                        <p class="box-content-header">KPI</p>
+                                        <p class="box-content-subheader">Prototyping</p>
+                                    </div>
+                                    <div class="box-progress-wrapper">
+                                        <p class="box-progress-header">Progress</p>
+                                        <div class="box-progress-bar">
+                                            <span class="box-progress" style="width: 45%; background-color: #7835dc"></span>
+                                        </div>
+                                        <p class="box-progress-percentage">45%</p>
+                                        <P>A RECEBER $150</P>
+                                    </div>
+                                    <div class="project-box-footer">
+                                        <div class="participants">
+                                            <button class="add-participant" style="color: #7835dc;" data-modal="modal-kpi" >
+                                                <p>Visualizar</p>
+                                            </button>
+                                        </div>
+                                        <div class="days-left" style="color: #7835dc;">
+                                            1 Day Left
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-box-wrapper">
+                              <div class="project-box" style="background-color: #ff942e;">
+                                  <div class="project-box-header">
+                                      <span>December 10, 2020</span>
+                                      <div class="more-wrapper">
+                                          <button class="project-btn-more">
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                                                  <circle cx="12" cy="12" r="1" />
+                                                  <circle cx="12" cy="5" r="1" />
+                                                  <circle cx="12" cy="19" r="1" />
+                                              </svg>
+                                          </button>
+                                      </div>
+                                  </div>
+                                  <div class="project-box-content-header">
+                                      <p class="box-content-header">Recuperação</p>
+                                      <p class="box-content-subheader">Prototyping</p>
+                                  </div>
+                                  <div class="box-progress-wrapper">
+                                      <p class="box-progress-header">Progress</p>
+                                      <div class="box-progress-bar">
+                                          <span class="box-progress" style="width: 45%; background-color:  #7835dc;"></span>
+                                      </div>
+                                      <p class="box-progress-percentage">45%</p>
+                                      <P>A RECEBER $150</P>
+                                  </div>
+                                  <div class="project-box-footer">
+                                      <div class="participants">
+                                          <button class="add-participant" style="color: #7835dc;;" data-modal="modal-recuperacao" >
+                                              <p>Visualizar</p>
+                                          </button>
+                                      </div>
+                                      <div class="days-left" style="color: #7835dc;">
+                                          1 Day Left
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+
+                         </div>
+                </div>
+      
+               
+
+<!-- Modais -->
+<div id="modal-basf-litragem" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>BASF Litragem</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div id="modal-basf-r" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>BASF R$</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div id="modal-tigre-tc" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Tigre T&C</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal-tigre-fpp" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Tigre FPP</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal-genco" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Genco</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+                
+
+  <div id="modal-viapol" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Viapol</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal-ds-color" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Ds Color</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal-g2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>G2</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Meta (%)</th>
+            <th>Valor a Receber (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>75%</td>
+            <td>R$ 35,00</td>
+          </tr>
+          <tr>
+            <td>85%</td>
+            <td>R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>95%</td>
+            <td>R$ 75,00</td>
+          </tr>
+          <tr>
+            <td>100%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>110%</td>
+            <td>R$ 112,50</td>
+          </tr>
+          <tr>
+            <td>120%</td>
+            <td>R$ 168,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal-kpi" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>KPI's - SUVINIL</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Indicador</th>
+            <th>Meta Trimestral</th>
+            <th>Meta Acumulada</th>
+            <th>Real Acumulado</th>
+            <th>%</th>
+            <th>Valor a Receber</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cobertura / Ativação Mensal</td>
+            <td>488</td>
+            <td>341</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>Tecnologias BASF</td>
+            <td>5.577</td>
+            <td>1.858</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>Mix Básico</td>
+            <td>293</td>
+            <td>97</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <!-- Total da seção -->
+          <tr class="total-row">
+            <td colspan="5" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+            <td style="font-weight: bold;">R$ 300,00</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h2>KPI's - TIGRE (T&C)</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Indicador</th>
+            <th>Meta Trimestral</th>
+            <th>Meta Acumulada</th>
+            <th>Real Acumulado</th>
+            <th>%</th>
+            <th>Valor a Receber</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cobertura / Ativação Mensal</td>
+            <td>456</td>
+            <td>319</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>MIX LUZES T&C</td>
+            <td>3.066</td>
+            <td>1.022</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>PESO 3 (AMARELO)</td>
+            <td>161.619</td>
+            <td>53.883</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>PESO 5 (AZUL)</td>
+            <td>1.346.823</td>
+            <td>449.030</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <!-- Total da seção -->
+          <tr class="total-row">
+            <td colspan="5" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+            <td style="font-weight: bold;">R$ 400,00</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h2>KPI'S PREMIUM POSITIVAÇÃO</h2>
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Indicador</th>
+            <th>Meta Trimestral</th>
+            <th>Meta Acumulada</th>
+            <th>Real Acumulado</th>
+            <th>%</th>
+            <th>Valor a Receber</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TIGRE FPP</td>
+            <td>414</td>
+            <td>289</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>VIAPOL</td>
+            <td>301</td>
+            <td>210</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>GENCO</td>
+            <td>253</td>
+            <td>177</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>DS COLLOR</td>
+            <td>255</td>
+            <td>178</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>G2</td>
+            <td>516</td>
+            <td>361</td>
+            <td>0</td>
+            <td>0,0%</td>
+            <td>R$ 100,00</td>
+          </tr>
+          <!-- Total da seção -->
+          <tr class="total-row">
+            <td colspan="5" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+            <td style="font-weight: bold;">R$ 500,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div id="modal-recuperacao" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h1>Recuperação Trimestral</h1>
+      <H2>Hierarquia de Produtos </H2>
+      
+      <table class="modal-table">
+        <thead>
+          <tr>
+            <th>Indicador</th>
+            <th>Meta</th>
+            <th>Janeiro Realizado (R$)</th>
+            <th>Fevereiro Realizado (R$)</th>
+            <th>Março Realizado (R$)</th>
+            <th>Porcentagem Atual</th>
+            <th>100%</th>
+            <th>105%</th>
+            <th>110%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BASF LTS</td>
+            <td>538.538</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 300,00</td>
+            <td>R$ 337,50</td>
+            <td>R$ 506,25</td>
+          </tr>
+          <tr>
+            <td>BASF $$$</td>
+            <td>9.229.831</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 300,00</td>
+            <td>R$ 337,50</td>
+            <td>R$ 506,25</td>
+          </tr>
+          <tr>
+            <td>TIGRE T&C</td>
+            <td>2.639.647</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 300,00</td>
+            <td>R$ 337,50</td>
+            <td>R$ 506,25</td>
+          </tr>
+          <tr>
+            <td>TIGRE FPP</td>
+            <td>234.512</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 150,00</td>
+            <td>R$ 168,75</td>
+            <td>R$ 253,13</td>
+          </tr>
+          <tr>
+            <td>GENCO</td>
+            <td>409.735</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 150,00</td>
+            <td>R$ 168,75</td>
+            <td>R$ 253,13</td>
+          </tr>
+          <tr>
+            <td>VIAPOL</td>
+            <td>281.748</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 150,00</td>
+            <td>R$ 168,75</td>
+            <td>R$ 253,13</td>
+          </tr>
+          <tr>
+            <td>DS COLOR</td>
+            <td>128.832</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 150,00</td>
+            <td>R$ 168,75</td>
+            <td>R$ 253,13</td>
+          </tr>
+          <tr>
+            <td>G2</td>
+            <td>1.065.010</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0%</td>
+            <td>R$ 150,00</td>
+            <td>R$ 168,75</td>
+            <td>R$ 253,13</td>
+          </tr>
+          <!-- Total da seção -->
+          <tr class="total-row">
+            <td colspan="7" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+            <td style="font-weight: bold;">R$ 2.100,00</td>
+            <td colspan="3"></td>
+          </tr>
+        </tbody>
+
+      </table>
+
+      
+
+            <!-- KPI's - SUVINIL -->
+    <h3>KPI's - SUVINIL</h3>
+    <table class="modal-table">
+      <thead>
+        <tr>
+          <tr>
+            <th>Indicador</th>
+            <th>Meta</th>
+            <th>Janeiro Realizado (R$)</th>
+            <th>Fevereiro Realizado (R$)</th>
+            <th>Março Realizado (R$)</th>
+            <th>Porcentagem Atual</th>
+            <th>100%</th>
+          </tr>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cobertura / Ativação Mensal</td>
+          <td>341</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>Mix Básico</td>
+          <td>97</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <!-- Total da seção -->
+        <tr class="total-row">
+          <td colspan="6" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+          <td style="font-weight: bold;">R$ 600,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- KPI's - TIGRE -->
+    <h3>KPI's - TIGRE</h3>
+    <table class="modal-table">
+      <thead>
+        <tr>
+          <th>Indicador</th>
+          <th>Meta</th>
+            <th>Janeiro Realizado (R$)</th>
+            <th>Fevereiro Realizado (R$)</th>
+            <th>Março Realizado (R$)</th>
+            <th>Porcentagem Atual</th>
+            <th>100%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cobertura / Ativação Mensal</td>
+          <td>319</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>PESO 3 (AMARELO)</td>
+          <td>53.883</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>PESO 5 (AZUL)</td>
+          <td>449.030</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <!-- Total da seção -->
+        <tr class="total-row">
+          <td colspan="6" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+          <td style="font-weight: bold;">R$ 900,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- KPI's PREMIUM POSITIVAÇÃO -->
+    <h3>KPI's PREMIUM POSITIVAÇÃO</h3>
+    <table class="modal-table">
+      <thead>
+        <tr>
+          <th>Indicador</th>
+          <th>Meta</th>
+            <th>Janeiro Realizado (R$)</th>
+            <th>Fevereiro Realizado (R$)</th>
+            <th>Março Realizado (R$)</th>
+            <th>Porcentagem Atual</th>
+            <th>100%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TIGRE FPP</td>
+          <td>289</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>VIAPOL</td>
+          <td>210</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>GENCO</td>
+          <td>177</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>DS COLOR</td>
+          <td>178</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <tr>
+          <td>G2</td>
+          <td>361</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0,0%</td>
+          <td>R$ 300,00</td>
+        </tr>
+        <!-- Total da seção -->
+        <tr class="total-row">
+          <td colspan="6" style="text-align: right; font-weight: bold;">Total a Receber:</td>
+          <td style="font-weight: bold;">R$ 1.500,00</td>
+        </tr>
+      </tbody>
+   
+  
+
+      </table>
+    </div>
+
+    
+    
+  </div>
+
+  
+        
+        
+</div>
+  
+
+                            </div>
+
+                            <div class="app-sidebar-bottom" >
+                              <a href="#" class="app-sidebar-link " data-page="pagehome.html">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                  <polyline points="9 22 9 12 15 12 15 22" /></svg>
+                              </a>
+                            
+                             
+                             
+                              <a href="#" class="app-sidebar-link" data-page="page2.html">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                  <line x1="16" y1="2" x2="16" y2="6" />
+                                  <line x1="8" y1="2" x2="8" y2="6" />
+                                  <line x1="3" y1="10" x2="21" y2="10" /></svg>
+                              </a>
+                             
+                              <a href="#" class="app-sidebar-link" data-page="page3.html">
+                              <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-settings" viewBox="0 0 24 24">
+                                  <defs />
+                                  <circle cx="12" cy="12" r="3" />
+                                  <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                              </svg>
+                                  </a>
+                          
+                                  
+                                  
+                                  
+                          </div>
+                          <script type="module" src="src/index.js"></script>
+</body>
+</html>
+
+
