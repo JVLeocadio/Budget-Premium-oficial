@@ -41,79 +41,88 @@
   
  
   /* Clientes */
-  .clients-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .clients-section h2 {
     margin-bottom: 20px;
   }
   
   .clients-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-  }
+}
+
   
-  .client-card {
-    background-color: #fee4cb;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+ 
   
   .client-card h3 {
     margin: 0;
     font-size: 18px;
   }
   
-  .client-card p {
-    margin: 5px 0 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
+
   
   /* Metas */
-  .goals-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .goals-section, .clients-section{
+   background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    padding: 30px;
+  argin-bottom: 1px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+   
   }
+  
   
   .goals-section h2 {
     margin-bottom: 20px;
   }
   
   .goals-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 5 colunas fixas */
     gap: 20px;
-  }
-  
-  .goal-card {
-    background-color: #e9e7fd;
-    padding: 15px;
-    border-radius: 8px;
+    grid-auto-rows: 1fr; /* Garante que todas as linhas tenham o mesmo tamanho */
+}
+/* Melhorando os cards */
+.goal-card,
+.client-card {
+    
+    padding: 20px;
+    border-radius: 12px;
     text-align: center;
-    flex: 1 1 calc(25% - 20px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.goal-card {
+  background-color: #e9e7fd;}
+.client-card {  background-color: #fee4cb; }
+    
+/* Efeito de hover nos cards */
+.goal-card:hover,
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.goals-section h2,
+.clients-section h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
   .goal-card h3 {
     margin: 0;
     font-size: 18px;
+    
   }
   
-  .goal-card p {
-    margin: 5px 0 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
+  .goal-card p,
+.client-card p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+
   
   /* Responsividade */
   @media screen and (max-width: 768px) {
